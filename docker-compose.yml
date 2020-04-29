@@ -1,11 +1,11 @@
 version: '3'
 services:
   nginx:
-    image: benoitmonchanin/4dvop-app/nginx-4dvop
+    image: dirane/4dvop-nginx
     ports:
       - "8080:8080"
   haproxy:
-    image: benoitmonchanin/4dvop-app/haproxy-4dvop
+    image: dirane/4dvop-haproxy
     ports:
       - "80:80"
     depends_on:
